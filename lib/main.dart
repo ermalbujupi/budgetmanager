@@ -1,4 +1,5 @@
 import 'package:BudgetManager/statusview.dart';
+import 'package:BudgetManager/transactionslist.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,14 @@ class MyApp extends StatelessWidget {
           title: Text("Budget Manager"),
           backgroundColor: Colors.blue,
         ),
-        body: Container(child: StatusView()),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(child: StatusView()),
+              TransactionsList(),
+            ],
+          ),
+        ),
       ),
     );
   }

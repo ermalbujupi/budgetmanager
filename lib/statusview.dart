@@ -10,7 +10,8 @@ class StatusView extends StatefulWidget {
 class _StatusViewState extends State<StatusView> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Card(
+      shadowColor: Colors.black,
       child: Column(
         children: [
           Row(
@@ -91,10 +92,6 @@ class _StatusViewState extends State<StatusView> {
           )
         ],
       ),
-      margin: EdgeInsets.all(25.0),
-      decoration: BoxDecoration(border: Border.all(color: Colors.blueAccent)),
-      height: 150.0,
-      width: 500.0,
     );
   }
 }
